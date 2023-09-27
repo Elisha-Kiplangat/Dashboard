@@ -7,9 +7,20 @@
 body{
     color: rgb(100, 103, 103);
 }
+/*title editing*/
+
 h3{
     color:black;
     padding-block: 0.2rem;
+    width: 80%;
+    float: left;
+}
+.like{
+    width: 20%;
+    float: right;
+}
+.like i{
+    color: rgb(255, 156, 7);
 }
 a{
     text-decoration: none;
@@ -25,6 +36,21 @@ li{
     width:47%;
     margin-left: 50%;
     outline: 2px solid green; 
+    
+}
+.time{
+    padding: 4px;
+    margin-left: 2px;
+}
+.start{
+    color: #0ea5e9;
+    border: none;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.start:hover{
+    background-color: #05293b;
 }
 
 .bold{
@@ -42,7 +68,7 @@ h2{
     display: var(--grid);
 }
 .grid-container{
-   grid-template-columns: 12em 1fr;
+   grid-template-columns: 12em 2fr;
    height: 100%;
    display: flex;
 }
@@ -54,7 +80,7 @@ h2{
     row-gap: 40px;
     font-size: large;
     position: fixed;
-    width: 180px;
+    width: 200px;
     padding-bottom: 50px;
 }
 
@@ -87,7 +113,49 @@ span{
     padding-bottom: 10px;
     border-radius: 5px;
 }
-/*.bottom{
+/* task hover*/
+.sub-task{
+    display: none;
+    
+}
+
+.side-bar ul li:hover .sub-task{
+    display: block;
+    position: absolute;
+    margin-left: 88px;
+    margin-top: -80px;
+    background-color: #0b77a8;
+}
+.sub-task ul{
+    margin: 0px;
+}
+.sub-task ul li{
+    height: 40px;
+    width: 90px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-top: -5px;
+}
+.sub-task ul li a:hover{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+.sub-task ul li:nth-child(1){
+    margin-top: 15px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+} 
+.sub-task ul li:nth-child(2){
+
+    margin-top: 3px;
+    margin-left: 5px;
+} 
+/*
+.bottom{
     height: 50px;
     background-color: aqua;
 }*/
@@ -214,7 +282,6 @@ input:focus{
     grid-template-rows:3rem  3fr;
     background-color: rgb(245, 240, 240);
 }
-.span-text,
 .main-content
 {
     grid-column: 1/-1;
@@ -233,17 +300,6 @@ input:focus{
     padding-right:1rem;
     display: grid;
     grid-template-columns: 3fr ;
-}
-.span-text p:nth-child(1){
- 
-    align-self:end;
-    margin-bottom: 1rem;
-    }
-.span-text p:nth-child(2){
-    margin-bottom: 1rem;
-grid-column: 11/-1;
-align-self: end;
-margin-left: -5rem;
 }
 .small__card--container{
   
@@ -264,6 +320,7 @@ margin-left: -5rem;
     box-shadow:1px 5px 5px 0px rgba(137, 124, 124, 0.22);
     background-color: white;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 .card::before{
     content:' ';
