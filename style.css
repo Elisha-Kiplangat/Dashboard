@@ -18,6 +18,7 @@ h3{
 .like{
     width: 20%;
     float: right;
+    cursor: pointer;
 }
 .like i{
     color: rgb(255, 156, 7);
@@ -116,7 +117,7 @@ span{
 /* task hover*/
 .sub-task{
     display: none;
-    
+    z-index: 1;
 }
 
 .side-bar ul li:hover .sub-task{
@@ -124,8 +125,16 @@ span{
     position: absolute;
     margin-left: 88px;
     margin-top: -80px;
-    background-color: #0b77a8;
+    background-color: #043b55;
 }
+.sub-task ul li a::before {
+    content: "◀"; /* Unicode character for a right-pointing arrow */
+    color: #043b55;
+    position: absolute;
+    right: 98%;
+    top: 65%;
+    transform: translateY(-50%);
+  }
 .sub-task ul{
     margin: 0px;
 }

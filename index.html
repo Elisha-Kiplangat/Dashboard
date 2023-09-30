@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
 font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dashboard</title>
@@ -21,8 +22,8 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                 <li><a href="#"><i class="fa fa-tasks"></i>Tasks</a>
                     <div class="sub-task">
                         <ul>
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Favourite</a></li>
+                        <li class="all"><a href="#">All</a></li>
+                        <li class="favourite"><a href="#">Favourite</a></li>
                         </ul>
                     </div>
                 </li>
@@ -82,7 +83,7 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                         <div class="card">
                             <div class="title">
                             <h3>Super Cool Project</h3>
-                            <h2 class="like"><i class="fa fa-star-o"></i></h2>
+                            <h2 class="like" data-id="card1"><i class="fa fa-star-o"></i></h2>
                         </div>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, itaque. Beatae consequuntur et nihil in similique voluptate magni expedita quae?
                        <div class="icons">
@@ -93,7 +94,7 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                         <div class="card">
                             <div class="title">
                             <h3>Less cool Project</h3>
-                            <h2 class="like"><i class="fa fa-star"></i></h2>
+                            <h2 class="like" data-id="card2"><i class="fa fa-star-o"></i></h2>
                             </div>
                             Veniam quod voluptatem  aspernatur possimus doloremque! Laborum, assumenda? Tempora omnis praesentium delectus rerum alias, accusantium adipisci dolorum.
                             <div class="icons">
@@ -104,8 +105,8 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                         <div class="card">
                             <div class="title">
                             <h3>Impossible App</h3>
-                            <h2 class="like"><i class="fa fa-star-o"></i></h2>
-                            </div>
+                            <h2 class="like" data-id="card3"><i class="fa fa-star-o"></i></h2>
+                        </div>
                             <p>Explicabo eaque quia culpa voluptatem voluptatibus? Beatae, officiis tenetur similique repudiandae placeat quae totam? Explicabo beatae sapiente voluptates voluptas veritatis.</p>
                             <div class="icons">
                                 <p class="time">0.07sec</p>
@@ -115,8 +116,8 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                         <div class="card">
                             <div class="title">
                             <h3>Coding is fun</h3>
-                                <h2 class="like"><i class="fa fa-star-o"></i></h2>
-                            </div>
+                            <h2 class="like" data-id="card4"><i class="fa fa-star-o"></i></h2>
+                        </div>
                             <p>Explicabo eaque quia culpa voluptatem voluptatibus? Beatae, officiis tenetur similique repudiandae placeat quae totam? Explicabo beatae sapiente voluptates voluptas veritatis.</p>
                             <div class="icons">
                                 <p class="time">0.07sec</p>
@@ -124,11 +125,10 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                                </div> 
                         </div>
                         <div class="card">
-                            
                             <div class="title">
-                                <h3>Coding is fun</h3>
-                                <h2 class="like"><i class="fa fa-star-o"></i></h2>
-                            </div>
+                            <h3>Coding is fun</h3>
+                            <h2 class="like" data-id="card5"><i class="fa fa-star-o"></i></h2>
+                        </div>
                             <p>Explicabo eaque quia culpa voluptatem voluptatibus? Beatae, officiis tenetur similique repudiandae placeat quae totam? Explicabo beatae sapiente voluptates voluptas veritatis.</p>
                             <div class="icons">
                                 <p class="time">0.07sec</p>
@@ -136,11 +136,10 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                                </div> 
                         </div>
                         <div class="card">
-                            
                             <div class="title">
-                                <h3>Coding is fun</h3>
-                                <h2 class="like"><i class="fa fa-star-o"></i></h2>
-                            </div>
+                            <h3>Coding is fun</h3>
+                            <h2 class="like" data-id="card6"><i class="fa fa-star-o"></i></h2>
+                        </div>
                             Reprehenderit soluta velit earum sed optio debitis enim similique modi corrupti ipsa id magnam culpa sunt, vero molestias. Nostrum, dolore.
                             <div class="icons">
                                 <p class="time">0.07sec</p>
@@ -148,11 +147,10 @@ font-awesome/4.7.0/css/font-awesome.min.css">
                                </div> 
                         </div>
                         <div class="card">
-                            
                             <div class="title">
-                                <h3>Less cool Peoject</h3>
-                                <h2 class="like"><i class="fa fa-star-o"></i></h2>
-                            </div>
+                            <h3>Less cool Peoject</h3>
+                            <h2 class="like" data-id="card7"><i class="fa fa-star-o"></i></h2>
+                        </div>
                             Veniam quod voluptatem  aspernatur possimus doloremque! Laborum, assumenda? Tempora omnis praesentium delectus rerum alias, accusantium adipisci dolorum.
                             <div class="icons">
                                 <p class="time">0.07sec</p>
