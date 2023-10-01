@@ -39,3 +39,117 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //display all or favourite tasks
 
+document.addEventListener("DOMContentLoaded", function() {
+  const likeButtons = document.querySelectorAll(".like");
+  const allLink = document.querySelector(".all");
+  const favLink = document.querySelector(".fav");
+
+  // Add event listeners to all "like" buttons to toggle the icons
+  likeButtons.forEach(likeButton => {
+    likeButton.addEventListener("click", function() {
+      toggleIcon(likeButton);
+    });
+  });
+
+  // Function to toggle the icon
+  function toggleIcon(likeButton) {
+    const iconElement = likeButton.querySelector("i");
+    if (iconElement.classList.contains("fa-star-o")) {
+      iconElement.classList.remove("fa-star-o");
+      iconElement.classList.add("fa-star");
+    } else {
+      iconElement.classList.remove("fa-star");
+      iconElement.classList.add("fa-star-o");
+    }
+  }
+
+  // Add event listeners for "All" and "Favourite" links
+  allLink.addEventListener("click", function() {
+    showAllCards();
+  });
+
+  favLink.addEventListener("click", function() {
+    showFavouriteCards();
+  });
+
+  // Function to show all cards
+  function showAllCards() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+      card.style.display = "flex";
+    });
+  }
+
+  // Function to show only cards with the favourite icon
+  function showFavouriteCards() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+      const icon = card.querySelector(".like i");
+      if (icon.classList.contains("fa-star-o")) {
+        card.style.display = "none";
+      } else {
+        card.style.display = "flex";
+      }
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const likeButtons = document.querySelectorAll(".like");
+  const allLink = document.querySelector(".all");
+  const favLink = document.querySelector(".fav");
+
+  // Function to toggle the icon
+  function toggleIcon(likeButton) {
+    const iconElement = likeButton.querySelector("i");
+    if (iconElement.classList.contains("fa-star-o")) {
+      iconElement.classList.remove("fa-star-o");
+      iconElement.classList.add("fa-star");
+    } else {
+      iconElement.classList.remove("fa-star");
+      iconElement.classList.add("fa-star-o");
+    }
+  }
+
+  // Add event listeners to all "like" buttons to toggle the icons
+  likeButtons.forEach(likeButton => {
+    likeButton.addEventListener("click", function() {
+      toggleIcon(likeButton);
+    });
+  });
+
+  // Function to show all cards
+  function showAllCards() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+      card.style.display = "flex";
+    });
+  }
+
+  // Function to show only cards with the favorite icon
+  function showFavouriteCards() {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+      const icon = card.querySelector(".like i");
+      if (icon.classList.contains("fa-star-o")) {
+        card.style.display = "none";
+      } else {
+        card.style.display = "flex";
+      }
+    });
+  }
+
+  // Add event listeners for "All" and "Favourite" links
+  allLink.addEventListener("click", function() {
+    showAllCards();
+  });
+
+  favLink.addEventListener("click", function() {
+    showFavouriteCards();
+  });
+});
+
+
+
+
+
